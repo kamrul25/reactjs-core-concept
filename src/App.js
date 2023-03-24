@@ -48,10 +48,11 @@ function LoadPosts (){
 }
 
 function Post(props){
+  const {title, body} = props.ha;
   return (
     <div  className='displayStyle'>
-      <h2>Title: {props.ha.title} </h2>
-      <p>Body: {props.ha.body}</p>
+      <h2>Title: {title} </h2>
+      <p>Body: {body}</p>
     </div>
   )
 }
